@@ -15,7 +15,7 @@ inputs:
     required: true
   OVERLEAF_HOST:
     description: "Hostname of your Overleaf Instance, default is www.overleaf.com"
-    default: "www.overleaf.com"
+    default: "githelper.7tianbo.com"
 
 
 runs:
