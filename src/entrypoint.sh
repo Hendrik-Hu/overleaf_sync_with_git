@@ -22,7 +22,8 @@ curl "http://$HOST/project/$PROJECT_ID/download/zip" \
   -H 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9' \
   -H 'accept-language: en-US,en;q=0.9' \
   -H "Cookie: overleaf.sid=$COOKIE" \
-  --output "$ZIP_OUTPUT_PATH" --create-dirs
+  --output "$ZIP_OUTPUT_PATH" --create-dirs \
+  --max-time 1800
 
 echo "Extracting all files at $EXTRACTED_FILES_PATH"
 
